@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+nav {
+  box-sizing: border-box;
+  background-color: gray;
+  padding: 20px;
+  width: 10%;
+  height: 100vh;
+}
+
+nav .square {
+  border-right: 1px solid gray;
+  background-color: rgba(128, 128, 128, 0.178);
+  width: 8vw;
+  height: 8vh;
+  border-radius: 2px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav .cerchio {
+  position: fixed;
+  left: 1vw;
+  bottom: 1vh;
+  background-color: rgba(128, 128, 128, 0.178);
+  width: 8vw;
+  height: 8vh;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+main {
+  box-sizing: border-box;
+  border: 1px solid green;
+  width: 60%;
+  height: 100vh;
+  row-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+main header {
+  grid-row: 1;
+  /* border: 1px solid gray; */
+  border: 1px solid green;
+
+}
+
+main header div{
+  display: table;
+}
+main header div{
+  align-content: center;
+  display: table-cell;
+}
+
+aside {
+  background-color: gray;
+  border: 1px solid green;
+
+  width: 30%;
+}
